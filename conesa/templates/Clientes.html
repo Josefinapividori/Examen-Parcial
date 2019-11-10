@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<br>
+<h2>Clientes</h2>
+<h3>En la base existen 100 clientes</h3>
+<br>
+<div class="page-header">
+ 	<table class="table table-striped">
+ 		{% for item in tabla %}
+		<tr>
+    {% for datos in item %}
+			<td>{{datos}}</td>
+			    {% endfor %}
+		  </tr>
+		{% endfor %}
+ 	</table>
+</div>
+{% endblock %}

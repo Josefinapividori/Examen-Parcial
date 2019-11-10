@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Realizado por</h1>
+
+    <h3><ins><b>Pividori Josefina</b></ins></h3>
+    <img src="{{ url_for('static', filename = 'IMG_8705.png') }}" alt="Smiley face" height="130" width="120">
+    <br>
+    <br>
+    <ul>
+    <h4><b><li>Materia:</li></b>Paradigmas de Programacion</h4>
+    <br>
+    <h4><b><li>Profesor:</li></b>Leandro E. Colombo Viña</h4>
+    <br>
+    <h4><b><li>Ciclo Lectivo:</li></b>2019</h4>
+
+    </ul>
+
+{% endblock %}
